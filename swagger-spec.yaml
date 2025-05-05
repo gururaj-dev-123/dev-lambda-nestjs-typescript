@@ -1,0 +1,20 @@
+openapi: 3.0.0
+paths:
+  /v1:
+    get:
+      operationId: UserController_userInfo
+      parameters: []
+      responses:
+        '200':
+          description: ''
+      tags:
+        - User Info
+info:
+  title: My NestJS API
+  description: The API description for my NestJS application
+  version: '1.0'
+  contact: {}
+tags: []
+servers: []
+components:
+  schemas: {}
