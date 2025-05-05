@@ -2,13 +2,20 @@ openapi: 3.0.0
 paths:
   /v1:
     get:
-      operationId: UserController_userInfo
+      operationId: UserController_userList
       parameters: []
       responses:
         '200':
           description: ''
-      tags:
+      tags: &ref_0
         - User Info
+    post:
+      operationId: UserController_createUser
+      parameters: []
+      responses:
+        '201':
+          description: ''
+      tags: *ref_0
 info:
   title: My NestJS API
   description: The API description for my NestJS application
